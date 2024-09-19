@@ -15,7 +15,7 @@ phases:
     commands:
       # Trigger the existing pipeline in the first repository
       - echo "Triggering the martini-build-image pipeline test..."
-      - aws codepipeline start-pipeline-execution --name martini-build-image
+      - aws codepipeline start-pipeline-execution --name martini-upload-package
 
   post_build:
     commands:
